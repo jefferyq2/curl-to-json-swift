@@ -1,2 +1,2 @@
-# prettier
-Prettier plugin for Proxyman
+# cURL to JSON
+A cURL to JSON Plugin for Proxyman

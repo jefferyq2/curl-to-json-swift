@@ -4,7 +4,7 @@ const config = {
     entry: './index.js',
     output: {
     	path: path.resolve(__dirname, 'dist'),
-    	filename: './prettier.js'
+    	filename: './curl-to-json.js'
     },
     mode: 'production',
 };
