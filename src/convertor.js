@@ -48,7 +48,8 @@ module.exports = {
   body: (data) => {
     if (typeof data === "string") {
       try {
-        return JSON.parse(data);
+        // return string, instead of JSON Object because it's easier to set to URLRequest body
+        return data;
       } catch {
         try {
           return parseParamsField(data);
