@@ -1,0 +1,23 @@
+{
+  "name": "curl-to-json-proxyman",
+  "version": "1.0.0",
+  "description": "cURL to JSON for Proxyman",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "homepage": "https://github.com/ProxymanApp/",
+  "dependencies": {
+    "@bany/curl-to-json": "^1.2.8"
+  }
+}
