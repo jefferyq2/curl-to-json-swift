@@ -1,4 +1,4 @@
-const Parse = require('@bany/curl-to-json');
+const Parse = require('./src/parse-json');
 
 const onMain = (curl) => {
   if (curl === undefined) {

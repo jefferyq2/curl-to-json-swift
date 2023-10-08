@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ProxymanApp/",
   "dependencies": {
-    "@bany/curl-to-json": "^1.2.8"
+    "minimist": "^1.2.8",
+    "whatwg-url-without-unicode": "^8.0.0-3"
   }
 }
