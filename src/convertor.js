@@ -46,27 +46,17 @@ module.exports = {
     return ouput;
   },
   body: (data) => {
+    console.log(data);
     if (typeof data === "string") {
-      try {
-        // return string, instead of JSON Object because it's easier to set to URLRequest body
-        return data;
-      } catch {
-        try {
-          return parseParamsField(data);
-        } catch {
-          return data;
-        }
-      }
-    } else {
-      let ouput = {};
-      data.forEach((element) => {
-        ouput = {
-          ...ouput,
-          ...pareString(element, parseFieldWithEqual),
-        };
-      });
-      return ouput;
+      // return string, instead of JSON Object because it's easier to set to URLRequest body
+      return data;
+    } else if (Array.isArray(data)) {
+      // if it's a Form data, just combine it as a string
+      return data.join("&");
     }
+
+    // raw
+    return data;
   },
   parseParamsField: parseParamsField,
 };
